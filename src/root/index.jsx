@@ -1,10 +1,28 @@
 import React from "react";
-import { Home } from "../components/Home";
+import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import {navbar} from "../utils/navbar";
+import  Page  from "../components/Page";
 
 export const Root = () => {
     return (
         <React.Fragment>
-            <Home/>
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<Navbar />}>
+                        {
+                            navbar.map(({ path, element, id }) => {
+                                return <Route key={id} path={path} element={element} />
+                            })
+                        }
+                        <Route path="/" element={<Navigate to={'/home'} />} />
+                    </Route>
+                    <Route path="*" element={<Page />} />
+                </Routes>
+              
+            </BrowserRouter>
         </React.Fragment>
     )
 }
+
+export default Root
