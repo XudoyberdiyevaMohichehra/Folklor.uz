@@ -1,18 +1,29 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-// import { ReactComponent as logo } from "../../assets/icons/logos-1.png";
-import { ReactComponent as logo1 } from "../../assets/icons/arrow-up.svg";
 
 
 
 export const Container = styled.div`
-//  width: 100%;
  height: 70px;
  background:var(--green);
  display:flex;
+ flex-direction:column;
  justify-content: space-between;
  align-items: center;
  padding: var(--padding);
+ background: var(--colorPrimary);
+`
+
+export const Wrapper = styled.div`
+ color:#fff;
+ font-size:16px;
+ height: 64px;
+ padding:var(--padding);
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ width:100%;
+ max-width: 1440px;
 `
 export const Link = styled(NavLink)`
  text-decoration:none;
@@ -20,21 +31,17 @@ export const Link = styled(NavLink)`
  padding: 0 32px;
 `
 export const Img = styled.img`
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
+margin-right: 20px;
 `
-export const Logo = styled(logo1)`
-width: 50px;
-height: 50px;
+export const Section = styled.div`
+ display:flex;
+ align-items:center;
+ cursor: ${({ logo }) => logo && 'pointer'};
+ .active{
+    color: yellowgreen;
+ }
 `
-export default Logo
 
-// export const Logo1 = styled(logo)`
-//  width:50px;
-//  height:36px;
-//  & path{
-//    fill:#fff;  
-//  }
-//  padding-right:10px;
 
-// `
