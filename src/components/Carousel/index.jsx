@@ -14,7 +14,7 @@ const contentStyle = {
     textAlign: 'center',
     background: '#364d79',
 };
-const Carousel = () => (
+const GenCarousel = () => (
     <Carousel autoplay>
         <div>
             <h3 style={contentStyle}>1</h3>
@@ -30,4 +30,4 @@ const Carousel = () => (
         </div>
     </Carousel>
 );
-export default Carousel;
+export default GenCarousel;

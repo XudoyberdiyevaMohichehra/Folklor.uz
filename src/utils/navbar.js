@@ -1,4 +1,5 @@
 import id from "../hooks/idGenerator";
+import { HomePage } from "../pages/HomePage";
 
 const { generate } = id();
 
@@ -8,6 +9,7 @@ export const navbar = [
         title: "Home",
         path: "/home",
         hidden: false,
+        element: <HomePage/>,
         children: [],
     },
     {
@@ -15,6 +17,7 @@ export const navbar = [
         title: "About",
         path: "/about",
         hidden: false,
+        element: <HomePage />,
         children: [],
     },
     {
@@ -22,6 +25,7 @@ export const navbar = [
         title: "Contact",
         path: "/contact",
         hidden: false,
+        element: <HomePage />,
         children: [],
     },
     { id: generate.next().value, title: `Signin`, path: "/signin", hidden: true },
