@@ -5,22 +5,22 @@ const { generate } = id();
 export const navbar = [
     {
         id: generate.next().value,
-        title: "Kurslar",
-        path: "/kurslar",
+        title: "Home",
+        path: "/home",
         hidden: false,
         children: [],
     },
     {
         id: generate.next().value,
-        title: "HR",
-        path: "/hr",
+        title: "About",
+        path: "/about",
         hidden: false,
         children: [],
     },
     {
         id: generate.next().value,
-        title: "Sozlamalar",
-        path: "/sozlamalar",
+        title: "Contact",
+        path: "/contact",
         hidden: false,
         children: [],
     },

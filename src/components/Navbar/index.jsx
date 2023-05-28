@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { Container, Section, Wrapper, Link, Img, } from "./style";
 import { navbar } from '../../utils/navbar'
 import  logo  from "../../assets/icons/logos-1.png";
@@ -26,6 +26,7 @@ export const Navbar =()=>{
                         <button>click me</button>
                     </Section>
             </Wrapper>
+            <Outlet/>
         </Container>
         </>
     )

@@ -1,7 +1,8 @@
 import React from "react";
+import Carousel from "../Carousel/index";
 
 export const Home =()=>{
     return(
-        <h1>Hello Folklor</h1>
+        <Carousel/>
     )
 }
