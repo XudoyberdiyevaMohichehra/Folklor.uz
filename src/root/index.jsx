@@ -20,7 +20,7 @@ export const Root = () => {
                     </Route>
                     <Route path="*" element={<Page />} />
                 </Routes>
-              <GenCarousel/>
+              {/* <GenCarousel/> */}
             </BrowserRouter>
         </React.Fragment>
     )

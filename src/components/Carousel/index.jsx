@@ -1,14 +1,10 @@
 import React from "react";
-
-// export const Home = () => {
-//     return (
-//         <h1>Hello Folklor</h1>
-//     )
-// }
+import  folk from "../../assets/icons/folklor1.jpg";
+import { Img } from "./style";
 
 import { Carousel } from 'antd';
 const contentStyle = {
-    height: '160px',
+    height: '370px',
     color: '#fff',
     lineHeight: '160px',
     textAlign: 'center',
@@ -17,7 +13,7 @@ const contentStyle = {
 const GenCarousel = () => (
     <Carousel autoplay>
         <div>
-            <h3 style={contentStyle}>1</h3>
+            <Img src={folk} alt="" />
         </div>
         <div>
             <h3 style={contentStyle}>2</h3>

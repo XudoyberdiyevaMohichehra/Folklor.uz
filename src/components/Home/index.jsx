@@ -1,11 +1,12 @@
 import React from "react";
-import Carousel from "../Carousel/index";
+import GenCarousel from "../Carousel";
+
 
 export const Home =()=>{
     return(
         <>
-        {/* <Carousel/> */}
-        <h1>Hello</h1>
+        <GenCarousel/>
+        {/* <h1>Hello</h1> */}
         </>
     )
 }
