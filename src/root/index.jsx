@@ -3,6 +3,7 @@ import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import {navbar} from "../utils/navbar";
 import  Page  from "../components/Page";
+import GenCarousel from "../components/Carousel";
 
 export const Root = () => {
     return (
@@ -19,7 +20,7 @@ export const Root = () => {
                     </Route>
                     <Route path="*" element={<Page />} />
                 </Routes>
-              
+              <GenCarousel/>
             </BrowserRouter>
         </React.Fragment>
     )

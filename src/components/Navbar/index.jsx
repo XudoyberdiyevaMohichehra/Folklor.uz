@@ -26,8 +26,8 @@ export const Navbar =()=>{
                         <button>click me</button>
                     </Section>
             </Wrapper>
-            <Outlet/>
         </Container>
+            <Outlet/>
         </>
     )
 }
